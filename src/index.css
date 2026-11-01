@@ -1,0 +1,57 @@
+* { box-sizing: border-box; }
+html, body, #root { margin: 0; height: 100%; }
+body {
+  font-family: -apple-system, system-ui, sans-serif;
+  background: #0f172a; color: #e2e8f0;
+  padding-top: env(safe-area-inset-top);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+.app { max-width: 640px; margin: 0 auto; padding: 16px; }
+h1 { font-size: 1.6rem; margin: 0 0 4px; }
+h2 { font-size: 1.15rem; margin: 20px 0 8px; }
+h3 { font-size: 1rem; margin: 16px 0 6px; color: #94a3b8; }
+.muted { color: #94a3b8; font-size: 0.9rem; }
+.danger { color: #f87171; background: #7f1d1d33; padding: 8px 12px; border-radius: 8px; }
+
+.percent-dashboard { background: #1e293b; padding: 16px; border-radius: 12px; margin-top: 16px; text-align: center; }
+.percent-dashboard output { display: block; font-size: 2.4rem; font-weight: 700; color: #38bdf8; margin: 8px 0; }
+.percent-dashboard .target-met { color: #34d399; }
+.percent-dashboard .target-needed { color: #fbbf24; }
+
+.tabs { display: flex; gap: 8px; margin: 20px 0 12px; }
+.tabs button { flex: 1; padding: 10px; border: 1px solid #334155; background: #1e293b; color: #cbd5e1; border-radius: 8px; font-size: 0.95rem; }
+.tabs button.active { background: #38bdf8; color: #0f172a; border-color: #38bdf8; font-weight: 600; }
+
+.period-list { display: flex; flex-direction: column; gap: 8px; }
+.period-card { background: #1e293b; padding: 12px; border-radius: 10px; display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.period-card strong { display: block; }
+.period-card p { margin: 2px 0 0; font-size: 0.85rem; }
+
+button { font-size: 1rem; padding: 10px 16px; border-radius: 8px; border: none; background: #38bdf8; color: #0f172a; font-weight: 600; }
+.attendance-status { font-size: 0.9rem; padding: 4px 10px; border-radius: 6px; }
+.attendance-status.present { background: #34d39933; color: #34d399; }
+.attendance-status.absent  { background: #f8717133; color: #f87171; }
+.attendance-status.pending { background: #64748b33; color: #94a3b8; }
+
+.alarm-card { background: #1e293b; padding: 16px; border-radius: 12px; margin: 16px 0; border-left: 4px solid #fbbf24; }
+.alarm-card ol { padding-left: 20px; line-height: 1.6; }
+
+.timetable-list { list-style: none; padding: 0; margin: 0; }
+.timetable-list li { display: flex; gap: 12px; padding: 6px 0; border-bottom: 1px solid #1e293b; font-size: 0.9rem; }
+.timetable-list li span:first-child { color: #94a3b8; min-width: 100px; }
+
+.day-tabs { display: flex; gap: 6px; margin: 8px 0; overflow-x: auto; }
+.day-tabs button { padding: 6px 12px; font-size: 0.85rem; background: #1e293b; color: #cbd5e1; }
+.day-tabs button.active { background: #38bdf8; color: #0f172a; }
+
+.editor-list { list-style: none; padding: 0; }
+.editor-list li { display: grid; grid-template-columns: 1fr auto auto auto auto; gap: 6px; margin-bottom: 6px; align-items: center; }
+.editor-list input, .editor-list select { background: #1e293b; color: #e2e8f0; border: 1px solid #334155; border-radius: 6px; padding: 6px; font-size: 0.85rem; width: 100%; }
+.editor-list button { padding: 6px 10px; font-size: 0.8rem; background: #f8717133; color: #f87171; }
+
+.field { margin-bottom: 12px; }
+.field label { display: block; font-size: 0.85rem; color: #94a3b8; margin-bottom: 4px; }
+.field input { width: 100%; padding: 8px; background: #1e293b; color: #e2e8f0; border: 1px solid #334155; border-radius: 6px; font-size: 1rem; }
+.file-label { display: inline-block; margin-top: 8px; padding: 10px 16px; background: #334155; color: #e2e8f0; border-radius: 8px; font-size: 0.9rem; cursor: pointer; }
+.file-label input { display: none; }
+
